@@ -1,0 +1,29 @@
+/* Custom styles for image resizing */
+
+.markdown .img-tiny {
+  max-width: 1.5em !important;
+  height: auto;
+}
+
+.markdown .img-small {
+  max-width: 5em !important;
+  height: auto;
+}
+
+.markdown .img-medium {
+  max-width: 400px !important;
+  height: auto;
+}
+
+.markdown .img-large {
+  max-width: 600px !important;
+  height: auto;
+}
+
+.markdown .h-half {
+  height: 50% !important;
+}
+
+.markdown .w-half {
+  width: 50% !important;
+}

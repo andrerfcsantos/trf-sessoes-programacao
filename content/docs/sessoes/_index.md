@@ -1,0 +1,11 @@
++++
+date = '2025-09-22T19:10:17+01:00'
+draft = false
+title = 'Sessões'
++++
+
+## Registo de sessões
+
+|    Data    | Temas Abordados                                                                                                                                                                                      |          Link para notas           |
+|:----------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------:|
+| 19/09/2025 | - `console.log()` para mostrar texto no ecrã<br/>- Tipos primitivos<br/>- Operações simples com números e strings<br/>- Conversão entre strings e números<br/>- Variáveis com `var`, `let` e `const` | [Link](/docs/sessoes/001_20250919) |
