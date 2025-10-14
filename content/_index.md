@@ -23,4 +23,9 @@ layout = 'landing'
   
   Notas das sessões de programação
   {{< /card >}}
+- {{< card href="/docs/exercicios/" >}}
+  ## 🧩 Exercícios práticos {anchor=false}
+
+  Exercícios práticos para consolidar os conhecimentos.
+  {{< /card >}}
 {{% /columns %}}
