@@ -8,6 +8,7 @@ title = 'Sessões'
 
 |    Data    | Temas Abordados                                                      |          Link para notas           |
 |:----------:|:---------------------------------------------------------------------|:----------------------------------:|
+| 27/10/2025 | - Inputs e validação de inputs                                       | [Link](/docs/sessoes/005_20251027) |
 | 20/10/2025 | - Exercícios práticos sobre condicionais                             | [Link](/docs/sessoes/004_20251020) |
 | 15/10/2025 | - Conversa informal                                                  |                N/A                 |
 | 10/10/2025 | - Estrutura condicional `else if`                                    | [Link](/docs/sessoes/003_20251010) |
