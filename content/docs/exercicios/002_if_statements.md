@@ -1,8 +1,9 @@
 +++
-date = '2025-10-25T23:06:10+01:00'
+date = '2025-10-28T20:06:10+01:00'
 draft = false
 title = 'If statements'
 +++
+
 
 # Exercícios de If statements
 
@@ -15,7 +16,7 @@ title = 'If statements'
 - [MDN Web Docs - if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 - [MDN Web Docs - Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
 - [Deno Documentation - Prompts](https://docs.deno.com/examples/prompts/)
-- [MDN Number()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+- [MDN Number()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number)
 - [MDN isNaN()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
 
 ## Exercícios
@@ -55,5 +56,21 @@ Criar um ficheiro separado para a resolução de cada um destes exercícios.
    {{% hint tip %}}
    Usar a função `isNaN()` para verificar se o valor inserido é um número válido.
    {{% /hint %}}
-
+4. O programa seguinte recebe como input uma idade dada pelo utilizador, converte-a para um número e a seguir mostra uma mensagem a dizer quantos anos o utilizador tem ou um erro caso a idade seja inválida:
+   ```javascript
+   let idadeString = prompt("Qual é a tua idade?");
+   let idade = Number(idadeString);
+   if (isNaN(idade)) {
+    console.log("Por favor, insere um número válido para a idade.");
+   } else {
+    console.log("Tens " + idade + " anos.");
+   }
+   ```
+   No entanto, se o utilizador disser que tem 1 ano, a mensagem vai estar no plural:
+   ```bash
+   $ Qual é a tua idade? 1
+   Tens 1 anos.
+   ```
+   Neste caso "anos" está no plural, mas devia estar no singular "ano".
+   Modifica o programa para que "anos" fique no singular quando o utilizador tiver 1 ano apenas.
    
