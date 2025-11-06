@@ -92,8 +92,9 @@ Permite também ir testando o programa à medida que ele vai crescendo, para ir 
 Nesta fase queremos que o programa gere um número aleatório entre 1 e 20 e peça ao utilizador para inserir um palpite.
 O programa deve imprimir o número aleatório gerado e o palpite do utilizador.
 
-Nesta fase o programa deve converter o input do utilizador para número usando a função `Number()` e verificar se o valor inserido é um número válido entre 1 e 20.
-Se o valor inserido não for válido, o programa deve imprimir uma mensagem de erro e terminar imediatamente com um código de saída diferente de zero.
+Nesta fase o programa deve converter o input do utilizador para número usando a função `Number()` e verificar se o valor inserido é um palpite válido.
+Um palpite é válido se for um número válido e estiver entre 1 e 20.
+Se o palpite inserido não for válido, o programa deve imprimir uma mensagem de erro e terminar imediatamente com um código de saída diferente de zero.
 
 Exemplo de output:
 ```
@@ -126,7 +127,14 @@ O programa deve usar um loop `while` para continuar a pedir palpites enquanto o 
 Quando o utilizador adivinhar o número correto, o programa deve imprimir "Parabéns! Adivinhaste o número!" e terminar.
 O utilizador tem um número ilimitado de tentativas para adivinhar o número.
 
-### Fase 4: Número de tentativas
+### Fase 4: Dicas de maior/menor
+
+Nesta fase queremos adicionar dicas ao programa para ajudar o utilizador a adivinhar o número correto.
+Se o palpite for um número válido, mas o palpite estiver incorrecto:
+- Se o palpite for menor que o número aleatório, o programa deve imprimir "O número secreto é maior do que o teu palpite.".
+- Se o palpite for maior que o número aleatório, o programa deve imprimir "O número secreto é menor do que o teu palpite.".
+
+### Fase 5: Número de tentativas
 
 Nesta fase queremos que o programa conte o número de tentativas que o utilizador fez para adivinhar o número correto.
 Quando o utilizador adivinhar o número correto, o programa deve imprimir também o número de tentativas que foram necessárias para acertar o número.
@@ -134,13 +142,13 @@ Quando o utilizador adivinhar o número correto, o programa deve imprimir també
 Nesta fase, queremos também que se o utilizador inserir um valor inválido (não é um número ou não está entre 1 e 20), o programa deve imprimir uma mensagem de erro e pedir o palpite novamente.
 Caso o número seja inválido, essa tentativa não deve ser contada.
 
-### Fase 5: Permitir sair do jogo
+### Fase 6: Permitir sair do jogo
 
 Nesta fase queremos adicionar a funcionalidade de permitir ao utilizador sair do jogo a qualquer momento.
 Para isso, o programa deve permitir que o utilizador insira a palavra "sair" quando lhe é pedido um número.
 Se o utilizador escrever "sair" em vez de dar um número, o jogo deve terminar.
 
-### Fase 6: Limite de tentativas
+### Fase 7: Limite de tentativas
 
 Nesta fase queremos adicionar um limite ao número de tentativas que o utilizador pode fazer para adivinhar o número correto.
 O utilizador deve ter no máximo 6 tentativas para adivinhar o número.
@@ -148,15 +156,15 @@ Se o utilizador não conseguir adivinhar o número dentro dessas 6 tentativas, o
 
 ### Fase Bónus: Escolher dificuldade
 
-Depois das 6 fases anteriores, temos um jogo de adivinhação de números bastante completo e funcional!
+Depois das 7 fases anteriores, temos um jogo de adivinhação de números bastante completo e funcional!
 Podemos parar de trabalhar no jogo aqui.
 
 No entanto, para um desafio extra opcional, podemos adicionar uma fase bónus onde o utilizador antes de começar pode escolher um nível de dificuldade.
 
 Os níveis de dificuldade podem ser:
-- 1 - Fácil: número entre 1 e 10, 6 tentativas no máximo
+- 1 - Fácil: número entre 1 e 10, 3 tentativas no máximo
 - 2 - Médio: número entre 1 e 20, 6 tentativas no máximo
-- 3 - Difícil: número entre 1 e 50, 8 tentativas no máximo
+- 3 - Difícil: número entre 1 e 50, 15 tentativas no máximo
 
 A forma como podemos pedir ao utilizador para escolher o nível de dificuldade é pedindo para inserir 1, 2 ou 3 no início do programa.
 Com base na escolha do utilizador, o programa deve ajustar o intervalo do número aleatório e o número máximo de tentativas permitidas.
